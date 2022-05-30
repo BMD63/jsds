@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Indie+Flower&display=swap');
+body{
+    /* background-color:lightblue; */
+    background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184));
+    font-family:'Comfortaa', sans-serif;
+    margin: 0;
+    
+}
+.container{
+    margin: auto;
+    width: 100%;
+}
+.header{
+    margin-bottom: 0.7em;
+    padding-left: 2em;
+    font-size: 30px;
+}
+.header h1{
+    margin-bottom: 0.2em;
+    line-height: 0.8em;
+}
+.header strong{
+    font-family: 'Indie Flower', cursive;
+    font-size: 85px;
+    font-weight: 700;
+    color: blue;
+    text-shadow: 3px 3px 5px rgb(12, 12, 12);
+}
+.navi{
+    position: sticky;
+    top: 10px;
+    margin-bottom: 0.55em;
+    /* background-color: gray;
+    opacity: 30%; */
+    height: 1.5em;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    /* justify-items: stretch; */
+    margin: auto;
+    /* background-color: bisque; */
+    background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184));
+    height: 1.8em;
+}
+.menu li{
+    padding-top: 2px;
+    margin: auto;
+    list-style-type: none;
+    width: 15%;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0 0 2px 2px grey;
+    /* background-color: rgb(152, 207, 195); */
+}
+.menu a:hover{
+    box-shadow: 0 0 5px 5px rgb(255, 254, 254);
+    transition-duration: 0.3s;
+    color: brown;
+    text-shadow: none;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: block;
+    text-shadow: 0 0 3px black;
+    font-weight: bold;
+    border-radius: 1em;
+}
+.offer{
+    height: 30em;
+    /* background-color: bisque; */
+    background-image: url(offer1280.jpg);
+    padding-left: 1em;
+    padding-top: 1em;
+    background-size:cover;
+    color: rgb(0, 7, 4);
+    text-shadow: 0 0 1px  rgb(248, 246, 246);
+}
+.offer h3{
+    color: white;
+    text-shadow: 0 0 1px black;
+    margin-bottom: 5em;
+}
+.descrip h1{
+    text-align: center;
+}
+.tocalc{
+    background-image: radial-gradient(rgb(4, 245, 4), green);
+    padding: 0.3em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 3em;
+}
+.tasks{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin-bottom: 5em;
+}
+.task{
+    /* margin: auto; */
+    height: 10em;
+    border: 1px solid black;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+}
+.task h3{
+    width: 100%;
+    align-self: center;
+}
+.pictures{
+    margin-bottom: 2em;
+}
+.samples h1{
+    text-align: center;
+}
+.pictures{
+    display: block;
+    position: relative;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.row img{
+    width: 33%;
+}
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    
+}
+.links1{
+    top: 25%;
+}
+.links2{
+    top: 75%;
+}
+.links a{
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    color: transparent;
+    transition-duration: 00.3s;
+    line-height: 3em;
+}
+.links a:hover{
+    color: white;
+    background-color: gray;
+    border-radius: 1em;
+    box-shadow: 0 0 3px 3px white;
+    line-height: 3em;
+    opacity: 0.7;
+    font-weight: 700;
+}
+.contacts h1{
+    text-align: center;
+}
+.contacts .address{
+    text-align: center;
+}
+.line{
+    height: 2px;
+    width: 70%;
+    background-color: blue;
+    margin: auto;
+}
+.contacts h3{
+    text-align: center;
+}
+.social{
+    width: 100%;
+    display: flex;
+    height: 5em;
+}
+.social .link{
+    box-sizing: border-box;
+   width: 25%;
+   margin: 0;
+   text-align: center;
+   align-content: center;
+}
+.social a{
+    display: inline-flex;
+    width: 25%;
+    justify-content: center;
+}
+.social img{
+width: 3em;
+height: 3em;
+align-self: center;
+border-radius: 0.6em;
+}
+.social img:hover{
+    width: 4em;
+    height: 4em;
+    opacity: 0.8;
+    box-shadow: 0 0 1px 5px rgb(51, 174, 231);
+    }
+    .qr{
+        display: flex;
+        width: 100%;
+        justify-content: stretch;
+        margin-bottom: 100px;
+    }
+    .qr img{
+        height: 12em;
+        width: 12em;
+        margin: auto;
+        border-radius: 0.6em;
+    }
+   /*  .jsdslogo{
+        color: blue;
+        font-family: 'Indie Flower';
+        font-size: 200px;
+        font-weight: 700;
+        width: 300px;
+        background-color: white;
+        padding-top: 30px;
+    }
+    .jsdslogo p{
+        margin: 0;
+        padding-left: 20px;
+        line-height: 140px;
+        text-shadow: 0 0 1px black;
+    } */
+    .powered{
+        width: 100%;
+        position: fixed;
+        bottom: 5px;
+        font-size: 8px;
+        display: flex;
+        justify-content: end;
+    }
+    .powered img{
+        margin-right: 2em;
+        margin-left: 2em;
+    }

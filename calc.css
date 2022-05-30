@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Indie+Flower&display=swap');
+body{
+    /* background-color:lightblue; */
+    background: linear-gradient(90deg, rgb(171, 206, 198), rgb(65, 183, 187));
+    font-family:'Comfortaa', sans-serif;
+    margin: 0;
+}
+.calc{
+    width: 100%;
+    margin-top: 5em;
+    height: 3em;
+    background: linear-gradient(90deg, rgb(95, 209, 182), rgb(158, 191, 192));
+    display: flex;
+    justify-content: stretch;
+    margin-bottom: 2em;
+}
+.calc a{
+    display: flex;
+    width: 25%;
+    height: 2em;
+    justify-content:space-evenly;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    background: linear-gradient(90deg, rgb(95, 209, 182), rgb(158, 191, 192));
+    display: flex;
+    justify-content: stretch;
+    height: 2.5em;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.menu a{
+    text-decoration: none;
+    text-shadow: 0 0 5px black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white;
+    width: 15%;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0 0 1px 3px rgb(31, 82, 71);
+    margin: auto;
+    /* margin-bottom: 2em; */
+}
+.menu2 ul{
+    display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+    justify-content: space-around;
+    list-style-type: none;
+    border: 1px solid black;
+    height: 2em;
+    align-items: center;
+    padding-left: 0;
+}
+.menu2 ul li {
+    border: 1px solid red;
+    background-color: beige;
+    width: 15%;
+    text-align: center;
+}
+@media (max-width: 800px){
+    body{font-size: 12px;}
+
+}
