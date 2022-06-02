@@ -121,6 +121,10 @@ body{
     width: fit-content;
     margin-left: auto;
 }
+.tocalc:hover{
+    box-shadow: 0 0 4px 4px white;
+    
+}
 .tasks{
     width: 100%;
     display: flex;
