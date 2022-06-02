@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Indie+Flower&display=swap');
 body{
-    /* background-color:lightblue; */
-    background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184));
+    background-color:#c5dae6;
+    /* background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184)); */
     font-family:'Comfortaa', sans-serif;
     margin: 0;
-    
+    color:#003e50;
 }
 .container{
     margin: auto;
     width: 100%;
 }
 .header{
-    margin-bottom: 0.7em;
+    margin-bottom: 0.1em;
     padding-left: 2em;
     font-size: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .header h1{
     margin-bottom: 0.2em;
@@ -23,8 +25,18 @@ body{
     font-family: 'Indie Flower', cursive;
     font-size: 85px;
     font-weight: 700;
-    color: blue;
+    /* color: blue; */
+    color: #68aab5;
     text-shadow: 3px 3px 5px rgb(12, 12, 12);
+}
+.header img{
+    width: 10%;
+}
+.lang{
+    text-align: right;
+    padding-top: 2em;
+    padding-right: 2em;
+    width: 30%;
 }
 .navi{
     position: sticky;
@@ -41,9 +53,10 @@ body{
     padding-left: 0;
     /* justify-items: stretch; */
     margin: auto;
-    /* background-color: bisque; */
-    background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184));
+    background-color: #c5dae6;
+    /* background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184)); */
     height: 1.8em;
+    opacity: 0.8;
 }
 .menu li{
     padding-top: 2px;
@@ -74,28 +87,39 @@ body{
     height: 30em;
     /* background-color: bisque; */
     background-image: url(offer1280.jpg);
-    padding-left: 1em;
+    padding-right: 4em;
     padding-top: 1em;
     background-size:cover;
     color: rgb(0, 7, 4);
     text-shadow: 0 0 1px  rgb(248, 246, 246);
+    text-align: right;
+    
 }
 .offer h3{
     color: white;
     text-shadow: 0 0 1px black;
     margin-bottom: 5em;
 }
+.offer .tocalc{
+    margin-left: auto;
+}
+.infoblock{
+    width: 95%;
+    margin: auto;
+}
 .descrip h1{
     text-align: center;
 }
 .tocalc{
-    background-image: radial-gradient(rgb(4, 245, 4), green);
+    background-image: radial-gradient(#68aab5, #003e50);
     padding: 0.3em;
     border-radius: 0.3em;
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 1px black;
-    margin-left: 3em;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
 }
 .tasks{
     width: 100%;
@@ -103,6 +127,9 @@ body{
     justify-content: stretch;
     align-items: center;
     margin-bottom: 5em;
+}
+.descrip p{
+    text-align: justify;
 }
 .task{
     /* margin: auto; */
@@ -113,6 +140,7 @@ body{
     flex-grow: 1;
     text-align: center;
     display: flex;
+    background-color: #68aab5;
 }
 .task h3{
     width: 100%;
@@ -127,6 +155,7 @@ body{
 .pictures{
     display: block;
     position: relative;
+    
 }
 .row{
     display: flex;
@@ -135,19 +164,19 @@ body{
 }
 .row img{
     width: 33%;
+    z-index: -1;
 }
 .links{
     display: flex;
     width: 100%;
     justify-content: space-around;
     position: absolute;
-    
 }
 .links1{
-    top: 25%;
+    top: 20%;
 }
 .links2{
-    top: 75%;
+    top: 70%;
 }
 .links a{
     width: 25%;
@@ -166,6 +195,25 @@ body{
     opacity: 0.7;
     font-weight: 700;
 }
+.profile{
+    /* display: flex;
+    align-items: flex-start; */
+    margin: 5px;
+    margin-left: 2em;
+}
+.profile h1{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.profile img{
+    float: left;
+    width: 25em;
+    margin: 2em;
+    box-shadow: 5px 5px 1px 2px gray;
+    margin-left: 0;
+    margin-top: 0;
+    border-radius: 0.5em;
+}
 .contacts h1{
     text-align: center;
 }
@@ -175,7 +223,7 @@ body{
 .line{
     height: 2px;
     width: 70%;
-    background-color: blue;
+    background-color: #8a92a9;
     margin: auto;
 }
 .contacts h3{
