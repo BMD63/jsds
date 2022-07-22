@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>House</title>
 </head>
 <body>
-    
+    <div class="container">
+        <form action="">
+            <div class="forms">
+                <label for="name">Как к вам обращаться?</label>
+                <input type="text" id="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="forms">
+                <label for="country">Страна</label>
+                <input type="text" id="country" placeholder="Россия">
+            </div>
+            <div class="forms">
+                <label for="town">Город</label>
+                <input type="text" id="town" placeholder="Москва">
+            </div>
+            <div class="forms">
+                <label for="buildingtype">Выберите тип необходимого здания</label>
+                <select name="buildingtype" id="type">
+                    <option selected value="s1">жилое помещение</option>
+                    <option value="s2">нежилое помещение</option>
+                    <option value="s3">комплекс</option>
+                </select>
+            </div>
+            <div class="forms">
+                <label for="area">Площадь здания, кв м</label>
+                <input type="range" id="area" min="100" max="3000" step="10">
+                <p id="area"> 100 - 3000</p>
+            </div>    
+            <h3>Этажи</h3>
+            <p>Выберите этажи в домe</p>
+            <div class="forms">
+                <label for="floors">Выберите этажность здания</label>
+                <select name="floors" id="floornum">
+                    <option selected value="s1">1 этаж</option>
+                    <option value="s2">2 этажа</option>
+                    <option value="s3">3 этажа</option>
+                </select>
+            </div>
+            <div class="forms">
+                <label for="basement">Подземный этаж</label>
+                <select name="basement" id="basement">
+                    <option selected value="s1">Нет</option>
+                    <option value="s2">Есть</option>
+                </select>
+            </div>
+            <div class="forms">
+                <label for="attic">Мансарда/чердак</label>
+                <select name="attictype" id="attic">
+                    <option selected value="s1">Эксплуатируемая мансарда</option>
+                    <option value="s2">Неэксплуатируемый чердак</option>
+                </select>
+            </div>
+            <h4>Первый этаж</h4>
+            <div class="forms">
+                <label for="town">Высота потолка, м</label>
+                <input type="number" id="high1" placeholder="2,8">
+            </div>
+            <div class="forms">
+                <label for="roomnum1">Количество помещений на этаже</label>
+                <select name="roomnumber1" id="roomnum1">
+                    <option selected value="s1">1</option>
+                    <option value="s2">2</option>
+                    <option value="s3">3</option>
+                    <option value="s4">4</option>
+                    <option value="s5">5</option>
+                    <option value="s6">6</option>
+                </select>
+            </div>
+            <div class="room1floor1">
+                <div class="forms">
+                    <label for="roomname11">Название</label>
+                    <textarea name="Rname11" id="roomname11" cols="60" rows="1"></textarea>
+                </div>
+                <div class="forms">
+                    <label for="1fl1roomarea">Площадь</label>
+                    <input type="number" id="1fl1roomarea">
+                </div>
+                <div class="forms">
+                    <label for="1fl1roomfurnit">перечень мебели/техники</label>
+                    <textarea name="11furnitura" id="1fl1roomfurnit" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="room2floor2">
+                <div class="forms">
+                    <label for="roomname12">Название</label>
+                    <textarea name="Rname12" id="roomname12" cols="60" rows="1"></textarea>
+                </div>
+                <div class="forms">
+                    <label for="1fl2roomarea">Площадь</label>
+                    <input type="number" id="1fl2roomarea">
+                </div>
+                <div class="forms">
+                    <label for="1fl2roomfurnit">перечень мебели/техники</label>
+                    <textarea name="12furnitura" id="1fl2roomfurnit" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>

@@ -103,6 +103,14 @@ body{
 .offer .tocalc{
     margin-left: auto;
 }
+.offer .offertext{
+    background-color: rgba(3, 3, 3, 0.5);
+    width: 40%;
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 1em;
+    padding-right: 0.5em;
+    }
 .infoblock{
     width: 95%;
     margin: auto;
