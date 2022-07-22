@@ -98,18 +98,19 @@ body{
 .offer h3{
     color: white;
     text-shadow: 0 0 1px black;
-    margin-bottom: 5em;
+    /* margin-bottom: 5em; */
 }
 .offer .tocalc{
     margin-left: auto;
 }
 .offer .offertext{
     background-color: rgba(3, 3, 3, 0.5);
-    width: 40%;
+    width: fit-content;
     margin-right: 0;
     margin-left: auto;
     border-radius: 1em;
-    padding-right: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 5em;
     }
 .infoblock{
     width: 95%;
@@ -212,6 +213,9 @@ body{
     align-items: flex-start; */
     margin: 5px;
     margin-left: 2em;
+}
+.profile p{
+    text-align: justify ;
 }
 .profile h1{
     text-align: center;

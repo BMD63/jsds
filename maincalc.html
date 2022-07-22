@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calc</title>
     <link rel="icon" href="jbfaw.png" type="image/x-icon">
-    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="maincalc.css">
 </head>
 <body>
-    <h1>Калькулятор предварительной оценки стоимости проекта</h1>
-    <form action="">
-        <div class="forms">
-            <label for="name">Как к вам обращаться?</label>
-            <input type="text" id="name" placeholder="Имя Фамилия">
-        </div>
-        <div class="forms">
-            <label for="type">Какой необходим проект</label>
-                <select name="type" id="type">
-                    <option selected value="s1">Проектирование здания</option>
-                    <option value="s2">Дизайн интерьера</option>
-                </select>
-        </div>
-        <div class="forms">
-            <label for="area">Площадь помещения, кв м</label>
-            <input type="number" id="area">
-        </div> 
-        <p>Введите e-mail, на который вам будет отправлен предварительный расчет</p>
-        <div class="forms">
-            <label for="email">e-mail</label>
-            <input type="email" id="email">
-        </div> 
-        <div class="forms">
-            <input type="submit" id="email" value="рассчитать">
-        </div> 
-        <p id="done"></p>
-    </form>
+    <div class="container">
+        <a href="index.html">на главную страницу</a>
+        <h1>Предварительная оценка стоимости проекта</h1>
+        <form action="" id="calculator">
+            <div class="forms">
+                <label for="name">Как к вам обращаться?</label>
+                <input type="text" id="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="forms">
+                <label for="type">Какой необходим проект</label>
+                    <select name="type" id="type">
+                        <option selected value="s1">Проектирование здания</option>
+                        <option value="s2">Дизайн интерьера</option>
+                    </select>
+            </div>
+            <div class="forms">
+                <label for="area">Площадь помещения, кв м</label>
+                <input type="number" id="area">
+            </div> 
+            <p>Введите e-mail, на который вам будет отправлен предварительный расчет</p>
+            <div class="forms">
+                <label for="email">e-mail</label>
+                <input type="email" id="email">
+            </div> 
+            <div class="forms">
+                <input type="submit" id="email" value="рассчитать">
+            </div> 
+            <p id="done"></p>
+        </form>
+</div>
 </body>
