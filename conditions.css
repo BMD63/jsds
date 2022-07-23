@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Indie+Flower&display=swap');
+body{
+    /* background-color:lightblue; */
+    background: linear-gradient(90deg, rgb(171, 206, 198), rgb(65, 183, 187));
+    font-family:'Comfortaa', sans-serif;
+    margin: 0;
+}
+.container{
+    width: 75%;
+    background-color: white;
+    margin: auto;
+    margin-top: 2em;
+    padding: 1em;
+}
