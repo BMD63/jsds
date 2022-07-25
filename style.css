@@ -35,6 +35,9 @@ body{
 header .name{
     width: fit-content;
 }
+.name span{
+    font-size: 25px;
+}
 .lang{
     text-align: right;
     padding-top: 2em;
@@ -150,13 +153,16 @@ header .name{
 .task{
     /* margin: auto; */
     height: 10em;
-    border: 1px solid black;
-    margin: 0.5em;
+    border: 1px solid #003e50;
+    margin: auto;
     border-radius: 0.5em;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 30%;
     text-align: center;
     display: flex;
     background-color: #68aab5;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .task h3{
     width: 100%;

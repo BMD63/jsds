@@ -5,10 +5,46 @@ body{
     font-family:'Comfortaa', sans-serif;
     margin: 0;
 }
+#home{
+    margin-left: 0.5em;
+    margin-top: 2em;
+}
 .container{
     width: 75%;
+    margin: auto;
+    margin-top: 2em;
+    
+}
+.conditions{
+    width: 100%;
     background-color: white;
     margin: auto;
     margin-top: 2em;
-    padding: 1em;
+    margin-bottom: 3em;
+    padding: 2em;
 }
+.tocalc{
+    background-image: radial-gradient(#68aab5, #003e50);
+    padding: 0.3em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+}
+.tocalc:hover{
+    box-shadow: 0 0 4px 4px black;}
+    .powered{
+        width: 100%;
+        position: fixed;
+        bottom: 5px;
+        font-size: 8px;
+        display: flex;
+        justify-content: end;
+    }
+    .powered img{
+        margin-right: 2em;
+        margin-left: 2em;
+    }
