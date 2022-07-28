@@ -77,15 +77,16 @@ header .name{
 .menu a:hover{
     box-shadow: 0 0 5px 5px rgb(255, 254, 254);
     transition-duration: 0.3s;
-    color: brown;
-    text-shadow: none;
+    color: white;
+    text-shadow: 0 0 3px black;
+    
 }
 .menu a{
     text-decoration: none;
-    color: white;
+    color:#003e50;
     width: 100%;
     display: block;
-    text-shadow: 0 0 3px black;
+    /* text-shadow: 0 0 3px black; */
     font-weight: bold;
     border-radius: 1em;
 }
@@ -106,9 +107,9 @@ header .name{
     text-shadow: 0 0 1px black;
     /* margin-bottom: 5em; */
 }
-.offer .tocalc{
-    margin-left: auto;
-}
+/* .offer .tocalc{
+    margin-left: auto; 
+}*/
 .offer .offertext{
     background-color: rgba(3, 3, 3, 0.5);
     width: fit-content;
@@ -135,6 +136,7 @@ header .name{
     display: block;
     width: fit-content;
     margin-left: auto;
+    font-size: 1em;
 }
 .tocalc:hover{
     box-shadow: 0 0 4px 4px white;
