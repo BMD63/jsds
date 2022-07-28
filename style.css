@@ -243,11 +243,16 @@ header .name{
     margin-top: 0;
     border-radius: 0.5em;
 }
+.contactsblocks{
+    display: flex;
+    margin: 3em;
+}
 .contacts h1{
     text-align: center;
 }
 .contacts .address{
-    text-align: center;
+    text-align: left;
+    margin-right: 5em;
 }
 .line{
     height: 2px;
@@ -259,11 +264,11 @@ header .name{
     text-align: center;
 }
 .social{
-    width: 100%;
-    display: flex;
+    /* width: 100%; */
+    /* display: flex; */
     height: 5em;
 }
-.social .link{
+/* .social .link{
     box-sizing: border-box;
    width: 25%;
    margin: 0;
@@ -273,6 +278,10 @@ header .name{
 .social a{
     display: inline-flex;
     width: 25%;
+    justify-content: center;
+} */
+.social a{
+    /* display: block; */
     justify-content: center;
 }
 .social img{
