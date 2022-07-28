@@ -136,7 +136,7 @@ header .name{
     display: block;
     width: fit-content;
     margin-left: auto;
-    font-size: 1em;
+    font-size: 14px;
 }
 .tocalc:hover{
     box-shadow: 0 0 4px 4px white;
@@ -245,14 +245,18 @@ header .name{
 }
 .contactsblocks{
     display: flex;
-    margin: 3em;
+    align-items: stretch;
+    justify-content: stretch;
+    box-sizing: border-box;
 }
 .contacts h1{
     text-align: center;
 }
-.contacts .address{
+.address{
     text-align: left;
-    margin-right: 5em;
+    width: 25%;
+    font-size: 0.95em;
+    line-height: 2;
 }
 .line{
     height: 2px;
