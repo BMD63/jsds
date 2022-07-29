@@ -248,7 +248,10 @@ header .name{
     align-items: stretch;
     justify-content: stretch;
     box-sizing: border-box;
-    margin: 5em;
+    /* margin: 5em; */
+    margin-top: 5em;
+    background-color: #68aab5;
+    padding-left: 2em;
 }
 .contacts h1{
     text-align: center;
@@ -275,6 +278,13 @@ header .name{
     background-color: #8a92a9;
     margin: auto;
     margin-bottom: 2em;
+}
+.linetop{
+    height: 2px;
+    width: 70%;
+    background-color: #8a92a9;
+    margin: auto;
+    margin-top: 2em;
 }
 .contacts h3{
     text-align: center;
