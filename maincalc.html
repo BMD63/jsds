@@ -17,10 +17,11 @@
                 <label for="name">Как к вам обращаться?</label>
                 <input type="text" id="name" placeholder="Имя Фамилия">
             </div>
+            <p id="select"></p>
             <div class="forms">
                 <label for="type">Какой необходим проект</label>
                     <select name="type" id="type">
-                        <option>---</option>
+                        <option selected hidden>---</option>
                         <option value="s1">Дизайн интерьера</option>
                         <option value="s2">Проектирование здания</option>
                     </select>
@@ -108,7 +109,7 @@
             </div>
             <div class="forms">
                 <label for="area">Площадь помещения, кв м</label>
-                <input type="number" id="area">
+                <input type="number" id="area" min="50" placeholder="от 50 кв.м">
             </div> 
             <p>Введите e-mail, на который вам будет отправлен предварительный расчет</p>
             <div class="forms">
