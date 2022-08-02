@@ -20,9 +20,91 @@
             <div class="forms">
                 <label for="type">Какой необходим проект</label>
                     <select name="type" id="type">
-                        <option selected value="s1">Проектирование здания</option>
-                        <option value="s2">Дизайн интерьера</option>
+                        <option>---</option>
+                        <option value="s1">Дизайн интерьера</option>
+                        <option value="s2">Проектирование здания</option>
                     </select>
+            </div>
+            <div class="floors">
+                <p>Дополнительные данные</p>
+                <table>
+                    <tr>
+                        <th>
+                            <p>Этаж</p>
+                        </th>
+                        <th>
+                            <p>Наличие</p>
+                        </th>
+                        <th class="col3">
+                            <p>Количество помещений</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label for="fo">подвал</label>
+                        </td>
+                        <td class="col2">
+                            <input type="checkbox" name="f0" id="basement">
+                        </td>
+                        <td class="col3">
+                            <input type="number" name="f0n" id="basement">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label for="f1">1й этаж</label>
+                        </td>
+                        <td class="col2">
+                            <input type="checkbox" name="f1" id="1stfl">
+                        </td>
+                        <td class="col3">
+                            <input type="number" name="f1n" id="1stfl">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label for="f2">2й этаж</label>
+                        </td>
+                        <td class="col2">
+                            <input type="checkbox" name="f2" id="2ndfl">
+                        </td>
+                        <td class="col3">
+                            <input type="number" name="f2n" id="2ndfl">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label for="f3">3й этаж</label>
+                        </td>
+                        <td class="col2">
+                            <input type="checkbox" name="f3" id="3rdfl">
+                        </td>
+                        <td class="col3">
+                            <input type="number" name="f3n" id="3rdfl">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label for="f4">жилая мансарда</label>
+                        </td>
+                        <td class="col2">
+                            <input type="checkbox" name="f4" id="roof">
+                        </td>
+                        <td class="col3">
+                            <input type="number" name="f4n" id="roof">
+                        </td>
+                    </tr>
+                </table>
+                <!-- <label for="fo">подвал</label>
+                <input type="checkbox" name="f0" id="basement">
+                <label for="f1">1й этаж</label>
+                <input type="checkbox" name="f1" id="1stfl">
+                <label for="f2">2й этаж</label>
+                <input type="checkbox" name="f2" id="2ndfl">
+                <label for="f3">3й этаж</label>
+                <input type="checkbox" name="f3" id="3rdfl">
+                <label for="f4">жилая мансарда</label>
+                <input type="checkbox" name="f4" id="roof"> -->
             </div>
             <div class="forms">
                 <label for="area">Площадь помещения, кв м</label>
