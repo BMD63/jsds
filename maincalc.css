@@ -17,12 +17,19 @@ body{
     /* display: none; */
     padding: 5px
 }
+#table{
+    display: none;
+}
 .col2{
     text-align: center;
 }
 /* .col3{
     display: none;
 } */
+#basement, #fl1, #fl2, #fl3, #roof{
+    display: none;
+}
+
 #calculator{
     border: 1px solid #003e50;
     padding-left: 1em;
