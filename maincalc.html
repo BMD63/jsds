@@ -17,17 +17,18 @@
                 <label for="name">Как к вам обращаться?</label>
                 <input type="text" id="name" placeholder="Имя Фамилия">
             </div>
-            <p id="select"></p>
             <div class="forms">
                 <label for="type">Какой необходим проект</label>
-                    <select name="type" id="type">
+                    <select name="type" id="type" onchange="typeselect()">
                         <option selected hidden>---</option>
                         <option value="s1">Дизайн интерьера</option>
                         <option value="s2">Проектирование здания</option>
                     </select>
             </div>
-            <div class="floors">
+            <p id="select"></p>
+            <div class="floors" id="table">
                 <p>Дополнительные данные</p>
+                <p id="tbl"></p>
                 <table>
                     <tr>
                         <th>
@@ -42,57 +43,62 @@
                     </tr>
                     <tr>
                         <td class="col1">
-                            <label for="fo">подвал</label>
+                            <!-- <label for="fo">подвал</label> -->
+                            подвал
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="f0" id="basement">
+                            <input type="checkbox" name="fl" id="basement" onchange="area()">
                         </td>
                         <td class="col3">
-                            <input type="number" name="f0n" id="basement">
+                            <input type="number" name="fln" id="basement">
                         </td>
                     </tr>
                     <tr>
                         <td class="col1">
-                            <label for="f1">1й этаж</label>
+                            <!-- <label for="f1">1й этаж</label> -->
+                            1й этаж
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="f1" id="1stfl">
+                            <input type="checkbox" name="fl" id="1stfl" onchange="area()">
                         </td>
                         <td class="col3">
-                            <input type="number" name="f1n" id="1stfl">
+                            <input type="number" name="fln" id="1stfl">
                         </td>
                     </tr>
                     <tr>
                         <td class="col1">
-                            <label for="f2">2й этаж</label>
+                            <!-- <label for="f2">2й этаж</label> -->
+                            2й этаж
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="f2" id="2ndfl">
+                            <input type="checkbox" name="fl" id="2ndfl" onchange="area()">
                         </td>
                         <td class="col3">
-                            <input type="number" name="f2n" id="2ndfl">
+                            <input type="number" name="fln" id="2ndfl">
                         </td>
                     </tr>
                     <tr>
                         <td class="col1">
-                            <label for="f3">3й этаж</label>
+                            <!-- <label for="f3">3й этаж</label> -->
+                            3й этаж
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="f3" id="3rdfl">
+                            <input type="checkbox" name="fl" id="3rdfl" onchange="area()">
                         </td>
                         <td class="col3">
-                            <input type="number" name="f3n" id="3rdfl">
+                            <input type="number" name="fln" id="3rdfl">
                         </td>
                     </tr>
                     <tr>
                         <td class="col1">
-                            <label for="f4">жилая мансарда</label>
+                            <!-- <label for="f4">жилая мансарда</label> -->
+                            жилая мансарда
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="f4" id="roof">
+                            <input type="checkbox" name="fl" id="roof" onchange="area()">
                         </td>
                         <td class="col3">
-                            <input type="number" name="f4n" id="roof">
+                            <input type="number" name="fln" id="roof">
                         </td>
                     </tr>
                 </table>
@@ -122,4 +128,5 @@
             <p id="done"></p>
         </form>
 </div>
+<script src="calc.js"></script>
 </body>
