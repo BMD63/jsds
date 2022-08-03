@@ -9,15 +9,21 @@ function typeselect() {
             document.getElementById('table').style.display='block';
         }
     }
-function area() {
+function area1() {
     let check=document.getElementsByName('fl');
     let checkarea=document.getElementsByName('fln');
-    for(let i=1; i<check.length; i++){
+    for(let i=0; i<check.length; i++){
+        console.log(i);
+        console.log(check[i].checked);
         if(check[i].checked){
-            checkarea[i].style.display='table-cell'
+            // console.log(checkarea[i]);
+            console.log(document.getElementsByName('fln')[i]); 
+            // checkarea[i].style.display='block';  
+            document.getElementsByName('fln')[i].style.display='table-cell';
+            
         }
         else{
             checkarea[i].style.display='none'
         }
-    }
-}
+    } 
+} 

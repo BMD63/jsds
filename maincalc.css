@@ -20,9 +20,9 @@ body{
 .col2{
     text-align: center;
 }
-.col3{
+/* .col3{
     display: none;
-}
+} */
 #calculator{
     border: 1px solid #003e50;
     padding-left: 1em;
