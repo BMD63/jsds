@@ -12,17 +12,17 @@
     <div class="container">
         <a href="index.html">на главную страницу</a>
         <h1>Предварительная оценка стоимости проекта</h1>
-        <form action="" id="calculator">
+        <form action="https://formspree.io/f/mgeqwpln" method="post" id="calculator">
             <div class="forms">
                 <label for="name">Как к вам обращаться?</label>
-                <input type="text" id="name" placeholder="Имя Фамилия">
+                <input type="text" name="clientname" id="name" placeholder="Имя Фамилия">
             </div>
             <div class="forms">
                 <label for="type">Какой необходим проект</label>
                     <select name="type" id="type" onchange="typeselect()">
                         <option selected hidden>---</option>
-                        <option value="s1">Дизайн интерьера</option>
-                        <option value="s2">Проектирование здания</option>
+                        <option value="interiordesign">Дизайн интерьера</option>
+                        <option value="archdesign">Проектирование здания</option>
                     </select>
             </div>
             <p id="select"></p>
@@ -115,12 +115,12 @@
             </div>
             <div class="forms">
                 <label for="area">Площадь помещения, кв м</label>
-                <input type="number" id="area" min="50" placeholder="от 50 кв.м">
+                <input type="number" name="housearea" id="area" min="50" placeholder="от 50 кв.м">
             </div> 
             <p>Введите e-mail, на который вам будет отправлен предварительный расчет</p>
             <div class="forms">
                 <label for="email">e-mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="clienemail">
             </div> 
             <div class="forms">
                 <input type="submit" id="email" value="рассчитать">
