@@ -16,8 +16,6 @@ let texts = [`<p>Ещё раз.
 Но если вдруг вы всё же старовер и нуждетесь посмотреть мне в глаза...
 Ну ОК, я же не против. С вас билеты туда и обратно! 
 И до встречи в любой точке земного шара ) <br> 
-<br> 
-<a class="post" onclick="hideParagr(0)"><em>Свернуть...</em></a>
 </p> `,
 `<p>... и так далее... . К сожалению подобные отклики я слышу довольно 
 часто о дизайнерах. И лично мне каждый раз становится неловко. 
@@ -61,8 +59,7 @@ let texts = [`<p>Ещё раз.
 Эти два пункта - это ваши "щит и меч".
 
 Не бойтесь ваших желаний! Они могут осуществиться! <br> 
-<br> 
-<a class="post" onclick="hideParagr(1)"><em>Свернуть...</em></a></p>`,
+</p>`,
 `<p>
 <ul>
 <li>
@@ -92,11 +89,10 @@ let texts = [`<p>Ещё раз.
 Кстати, поверьте, это не то, чтобы реклама. Не думаю, что такая 
 услуга может оцениваться дорого, скорее это попытка помочь и 
 предупредить разочарование, которое в наших реалиях выливается в миллионы ...<br> 
-<br> 
-<a class="post" onclick="hideParagr(2)"><em>Свернуть...</em></a></p>`]
+</p>`]
 function showParagr(number){
     console.log('click');
-    paragraph[number].innerHTML=texts[number];
+    paragraph[number].innerHTML=texts[number]+`<a class="post" onclick="hideParagr(`+number+`)"><em>Свернуть...</em></a>`;
     console.log(texts[number])
 }
 function hideParagr(number){
