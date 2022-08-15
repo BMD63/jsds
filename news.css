@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Indie+Flower&display=swap');
+body{
+    background-color:#c5dae6;
+    /* background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184)); */
+    font-family:'Comfortaa', sans-serif;
+    margin: 0;
+    color:#003e50;
+}
+main{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
+}
+h4{
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+img{
+    width: 200px;
+    flex-grow: 0;
+    margin: 1em;
+}
+.infoblock{
+    display: flex;
+    align-items: flex-start;
+    border: 1px dotted #003e50;
+}
+.left{
+    margin: 0 150px 0 2px;
+}
+.right{
+    margin: 0 2px 0 150px;
+    flex-direction: row-reverse;
+}
+a:hover{
+    cursor: pointer;
+}
+#gotop{
+    text-decoration: none;
+    margin-left: 5px;
+}
