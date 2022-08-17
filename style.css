@@ -14,7 +14,7 @@ html * {max-height:1000000px;}
 .header{
     margin-bottom: 0.1em;
     padding-left: 2em;
-    font-size: 30px;
+    font-size: 28px;
     display: flex;
     justify-content: space-between;
 }
@@ -24,7 +24,7 @@ html * {max-height:1000000px;}
 }
 .header strong{
     font-family: 'Indie Flower', cursive;
-    font-size: 85px;
+    font-size: 80px;
     font-weight: 700;
     /* color: blue; */
     color: #68aab5;
@@ -37,7 +37,7 @@ header .name{
     width: fit-content;
 }
 .name span{
-    font-size: 25px;
+    font-size: 22px;
 }
 .lang{
     text-align: right;
@@ -64,6 +64,19 @@ header .name{
     /* background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184)); */
     height: 1.8em;
     opacity: 0.8;
+    animation-duration: 3s;
+    animation-name: slideright;
+}
+@keyframes slideright {
+    from {
+        margin-left: 100%;
+        width: 500%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
 }
 .menu li{
     padding-top: 2px;

@@ -3,11 +3,14 @@ body{
     background-color:#c5dae6;
     /* background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184)); */
     font-family:'Comfortaa', sans-serif;
-    margin: 0;
+    margin: 1em 0 0 0;
     color:#003e50;
     font-size: 16px;
 }
 html * {max-height:1000000px;} 
+#top{
+    margin-top: 2em;
+}
 main{
     display: flex;
     flex-direction: column-reverse;
@@ -59,4 +62,6 @@ a:hover{
 #gotop{
     text-decoration: none;
     margin-left: 5px;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
 }
