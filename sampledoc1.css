@@ -11,7 +11,58 @@ main{
     width: auto;
     margin-bottom: 2em;
 }
+h1{
+  margin-bottom: 1.47em;
+}
+.btn-wrapper {
+    border: 2px solid;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10000px;
+    position: relative;
+    
+  }
+  .btn-wrapper::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c5dae6;
+    animation: rotate 5s normal linear infinite;
+  }
+  button {
+    border-radius: 100000px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #68aab5;
+    background-color: #003e50 ;
+    position: relative;
+    z-index: 1;
+  }
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate3d(0, 0, 1, 0deg);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate3d(0, 0, 1, 90deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate3d(0, 0, 1, 180deg);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate3d(0, 0, 1, 270deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate3d(0, 0, 1, 360deg);
+    }
+  }
 .images{
+    margin-top: 3em;
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 10px 10px;
