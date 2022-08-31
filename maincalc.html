@@ -10,8 +10,10 @@
 </head>
 <body>
     <div class="container">
-        <a href="index.html">на главную страницу</a>
-        <h1>Предварительная оценка стоимости проекта</h1>
+        <header>
+            <a href="index.html" id="back" data-help="Главная страница"><img src="images/home64.png" alt="home"></a>
+            <h1>Предварительная оценка стоимости проекта</h1>
+        </header>
         <form action="https://formspree.io/f/mgeqwpln" method="post" id="calculator">
             <div class="forms">
                 <label for="name">Как к вам обращаться?</label>
@@ -19,7 +21,7 @@
             </div>
             <div class="forms">
                 <label for="type">Какой необходим проект</label>
-                    <select name="type" id="type" onchange="typeselect()">
+                    <select name="type" id="type" onchange="typeSelect()">
                         <option selected hidden>---</option>
                         <option value="interiordesign">Дизайн интерьера</option>
                         <option value="archdesign">Проектирование здания</option>
@@ -47,7 +49,7 @@
                             подвал
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="fl" onchange="area1()">
+                            <input type="checkbox" name="fl" onchange="setInputStyle(0)">
                         </td>
                         <td class="col3">
                             <input type="number" name="fln" id="basement">
@@ -59,7 +61,7 @@
                             1й этаж
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="fl" onchange="area1()">
+                            <input type="checkbox" name="fl" onchange="setInputStyle(1)">
                         </td>
                         <td class="col3">
                             <input type="number" name="fln" id="fl1">
@@ -71,7 +73,7 @@
                             2й этаж
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="fl" onchange="area1()">
+                            <input type="checkbox" name="fl" onchange="setInputStyle(2)">
                         </td>
                         <td class="col3">
                             <input type="number" name="fln" id="fl2">
@@ -83,7 +85,7 @@
                             3й этаж
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="fl" onchange="area1()">
+                            <input type="checkbox" name="fl" onchange="setInputStyle(3)">
                         </td>
                         <td class="col3">
                             <input type="number" name="fln" id="fl3">
@@ -95,7 +97,7 @@
                             жилая мансарда
                         </td>
                         <td class="col2">
-                            <input type="checkbox" name="fl" onchange="area1()">
+                            <input type="checkbox" name="fl" onchange="setInputStyle(4)">
                         </td>
                         <td class="col3">
                             <input type="number" name="fln" id="roof">
@@ -120,12 +122,18 @@
             <p>Введите e-mail, на который вам будет отправлен предварительный расчет</p>
             <div class="forms">
                 <label for="email">e-mail</label>
-                <input type="email" id="email" name="clienemail">
+                <input type="email" id="email" name="clientemail">
             </div> 
-            <div class="forms">
-                <input type="submit" id="email" value="рассчитать">
-            </div> 
-            <p id="done"></p>
+            <div class="buttons">
+                <div class="forms">
+                    <input type="submit" id="calculete" value="рассчитать">
+                </div> 
+                <p id="done"></p>
+                <div class="forms">
+                    <button type="reset" onclick="resetForm()">Очистить форму</button>
+                    <!-- <button onclick="reset()">Сброс</button> -->
+                </div>
+            </div>
         </form>
 </div>
 <script src="calc.js"></script>

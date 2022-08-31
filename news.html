@@ -7,94 +7,98 @@
     <link rel="stylesheet" href="news.css">
 </head>
 <body>
-    <a href="index.html" id="top">на главную страницу</a>
-    <h1>Новости портала</h1>
-    <p>
-        Тут будут новости, полезные статьи и прочее
-    </p>
-    <main>
-        <div class="newsblock">
-            <h4>• 08.07.2022</h4>
-            <section class="infoblock left">
-                <img src="news2207.jpg" alt="">
-                <div class="txtsection">
-                    <p>
-                        Так ли нужно личное присутствие архитектора на объекте, для создания проекта?
-                        Нет.
-                        Современные технические возможности позволяют вести проектирование удалённо. 
-                        Я для себя даже проводила подсчёты - количество приездов на единицу проектов, 
-                        при нахождении в одном городе. Максимум - один, а именно знакомство и замер. 
-                        Получается, что если заказчик сможет сам выполнить замер или пригласить 
-                        кого-то, кто умеет это делать + фотофиксация, и вуаля - необходимость присутствия отпадает.
-                        Итак. 
-                    </p>
-                    <p class="postCont">
-                        <a class="post" onclick="showParagr(0)"><em>Читать далее...</em></a>
-                    </p>
+    <div class="container">
+            <header>
+                <a href="index.html" id="back" data-help="Главная страница"><img src="images/home64.png" alt="home"></a>
+            <h1>Новости портала</h1>
+            </header>
+        <!--  
+                Тут будут новости, полезные статьи и прочее
+            -->
+            <main>
+                <div class="newsblock">
+                    <h4>• 08.07.2022</h4>
+                    <section class="infoblock left">
+                        <img src="news2207.jpg" alt="" class="picture">
+                        <div class="txtsection">
+                            <p>
+                                Так ли нужно личное присутствие архитектора на объекте, для создания проекта?
+                                Нет.
+                                Современные технические возможности позволяют вести проектирование удалённо. 
+                                Я для себя даже проводила подсчёты - количество приездов на единицу проектов, 
+                                при нахождении в одном городе. Максимум - один, а именно знакомство и замер. 
+                                Получается, что если заказчик сможет сам выполнить замер или пригласить 
+                                кого-то, кто умеет это делать + фотофиксация, и вуаля - необходимость присутствия отпадает.
+                                Итак. 
+                            </p>
+                            <p class="postCont">
+                                <a class="post" onclick="showParagr(0)"><em>Читать далее...</em></a>
+                            </p>
+                        </div>
+                    </section>
                 </div>
-            </section>
-        </div>
-        <div class="newsblock">
-            <h4>• 15.07.2022</h4>
-            <section class="infoblock right">
-                <img src="news1507.jpg" alt="">
-                <div class="txtsection">
-                    <p>
-                        - Что она мне там нарисовала?!!??!
-            
-                        - Мы совсем не этого хотели!
-            
-                        - Да я бы сама лучше сделала!
-            
-                        - Два варианта и оба вообще не то, что нам нужно!
-            
-                        - Она вообще меня не слышит?
-            
-                        ... и так далее... . К сожалению подобные отклики я слышу довольно 
-                        часто о дизайнерах.
-                    </p>
-                    <p class="postCont">
-                        <a class="post" onclick="showParagr(1)"><em>Читать далее...</em></a>
-                    </p>
+                <div class="newsblock">
+                    <h4>• 15.07.2022</h4>
+                    <section class="infoblock right">
+                        <img src="news1507.jpg" alt="" class="picture">
+                        <div class="txtsection">
+                            <p>
+                                - Что она мне там нарисовала?!!??!
+                    
+                                - Мы совсем не этого хотели!
+                    
+                                - Да я бы сама лучше сделала!
+                    
+                                - Два варианта и оба вообще не то, что нам нужно!
+                    
+                                - Она вообще меня не слышит?
+                    
+                                ... и так далее... . К сожалению подобные отклики я слышу довольно 
+                                часто о дизайнерах.
+                            </p>
+                            <p class="postCont">
+                                <a class="post" onclick="showParagr(1)"><em>Читать далее...</em></a>
+                            </p>
+                        </div>
+                    </section>        
                 </div>
-            </section>        
-        </div>
-        <div class="newsblock">
-            <h4>• 22.07.2022</h4>
-            <section class="infoblock left">
-                <img src="news0807.jpg" alt="">
-                <div class="txtsection">
-                    <p>
-                        Поиск квартиры.
-                        С чего начать!?
-                        Так уж получилось, что поисками достойного жилья занялась 
-                        я для себя лично и поэтому говорить буду о себе. Итак, первое с чего 
-                        я начала - это:
-                    </p>
-                    <p class="postCont">
-                        <a class="post" onclick="showParagr(2)"><em>Читать далее...</em></a>
-                    </p>
+                <div class="newsblock">
+                    <h4>• 22.07.2022</h4>
+                    <section class="infoblock left">
+                        <img src="news0807.jpg" alt="" class="picture">
+                        <div class="txtsection">
+                            <p>
+                                Поиск квартиры.
+                                С чего начать!?
+                                Так уж получилось, что поисками достойного жилья занялась 
+                                я для себя лично и поэтому говорить буду о себе. Итак, первое с чего 
+                                я начала - это:
+                            </p>
+                            <p class="postCont">
+                                <a class="post" onclick="showParagr(2)"><em>Читать далее...</em></a>
+                            </p>
+                        </div>
+                    </section>
                 </div>
-            </section>
-        </div>
-        <div class="newsblock">
-            <h4>• 05.08.2022</h4>
-            <section class="infoblock right">
-                <img src="news0508.jpg" alt="">
-                <div class="txtsection">
-                    <p>
-                        Как там это модное слово? Лайфхак, кажется?
-                        Так вот! Хотите сами себе придумать дизайн 
-                        без помощи профессионала?
-                    </p>
-                    <p class="postCont">
-                        <a class="post" onclick="showParagr(3)"><em>Читать далее...</em></a>
-                    </p>
-                </div>
-            </section>
-        </div>
-    </main>
-    <a href="#top" id="gotop">Наверх</a>
+                <div class="newsblock">
+                    <h4>• 05.08.2022</h4>
+                    <section class="infoblock right">
+                        <img src="news0508.jpg" alt="" class="picture">
+                        <div class="txtsection">
+                            <p>
+                                Как там это модное слово? Лайфхак, кажется?
+                                Так вот! Хотите сами себе придумать дизайн 
+                                без помощи профессионала?
+                            </p>
+                            <p class="postCont">
+                                <a class="post" onclick="showParagr(3)"><em>Читать далее...</em></a>
+                            </p>
+                        </div>
+                    </section>
+            </div>
+        </main>
+        <a href="#top" id="gotop" data-help="Наверх"><img src="images/up64.png" alt="up" ></a>
+    </div>
     
     <script src="news.js"></script>
 </body>

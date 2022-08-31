@@ -11,6 +11,32 @@ main{
     width: auto;
     margin-bottom: 2em;
 }
+header {
+  display: flex;
+  align-items: center;
+}
+header a{
+  display: inline-block;
+  position: relative;
+}
+header a:hover::after{
+  content: attr(data-help);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 0.7em;
+  text-shadow: 1px 1px 1px black;
+  border: 1px dotted #003e50;
+  border-radius: 0.3em;
+  padding: 0.1em;
+}
+header h1{
+  margin: auto;
+  color: #003e50;
+}
 h1{
   margin-bottom: 1.47em;
 }
