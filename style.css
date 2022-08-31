@@ -108,13 +108,13 @@ header .name{
     height: 30em;
     /* background-color: bisque; */
     background-image: url(offer1280.jpg);
-    padding-right: 4em;
+    padding-right: 3em;
     padding-top: 1em;
     background-size:cover;
     color: #68aab5;
     text-shadow: 0 0 2px black;
     text-align: right;
-    
+    position: relative;
 }
 .offer h3{
     color: white;
@@ -133,6 +133,23 @@ header .name{
     padding: 0.5em;
     margin-bottom: 5em;
     }
+#discount{
+    position: absolute;
+    left: 5em;
+    transform: rotate(-15deg);
+    animation: rotate 3s normal linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform:rotateY(0deg)
+    }
+    50%{
+        transform:rotateY(90deg)
+    }
+    100%{
+        transform:rotateY(0deg)
+    }
+}
 .infoblock{
     width: 95%;
     margin: auto;
