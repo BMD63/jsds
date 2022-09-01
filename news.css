@@ -118,6 +118,11 @@ h4 {
 a:hover{
     cursor: pointer;
 }
+@media (orientation: portrait){
+    body{
+        font-size: 20px;
+    }
+}
 /* #gotop{
     text-decoration: none;
     margin-left: 5px;
