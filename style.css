@@ -407,4 +407,7 @@ border-radius: 0.6em;
         .menu{
             animation: none;
         }
+        body{
+            font-size: 24px;
+        }
     }
