@@ -122,6 +122,9 @@ a:hover{
     body{
         font-size: 26px;
     }
+    .picture{
+        width: 300px;
+    }
 }
 /* #gotop{
     text-decoration: none;

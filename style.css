@@ -403,7 +403,7 @@ border-radius: 0.6em;
         margin-right: 2em;
         margin-left: 2em;
     }
-    @media(orientation: portrait){
+    @media(orientation: portrait), (max-width: 900px){
         .menu{
             animation: none;
         }
