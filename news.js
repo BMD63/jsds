@@ -1,4 +1,5 @@
 const paragraph=document.getElementsByClassName("postCont");
+const infoblock=document.getElementsByClassName("infoblock")
 let texts = [`<p>Ещё раз.
 Для дизайна интерьера требуется:
 <ul>
@@ -110,8 +111,10 @@ function showParagr(number){
     console.log (paragraph.length)
     console.log (paragraph[paragraph.length-number]) */
     paragraph[number].innerHTML=texts[number]+`<a class="post" onclick="hideParagr(`+number+`)"><em>Свернуть...</em></a>`;
-    console.log(texts[number])
+    console.log(texts[number]);
+    infoblock[number].style.background="white";
 }
 function hideParagr(number){
-    paragraph[number].innerHTML=`<a class="post" onclick="showParagr(`+number+`)"><em>Читать далее...</em></a>`
+    paragraph[number].innerHTML=`<a class="post" onclick="showParagr(`+number+`)"><em>Читать далее...</em></a>`;
+    infoblock[number].style.background="transparent";
 }

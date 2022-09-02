@@ -105,14 +105,22 @@ h4 {
     align-items: flex-start;
     border: 1px dotted #003e50;
 }
+.txtsection p{
+    text-align: justify;
+    padding: 0 0.5em 0 0.5em;
+}
+.postCont p{
+    margin: 0;
+    padding: 0 -0.5em 0 -0.5em;
+}
 .infoblock:hover{
     box-shadow: 2px 2px 1px 1px gray;
 }
 .left{
-    margin: 0 150px 0 2px;
+    margin: 0 15vw 0 2px;
 }
 .right{
-    margin: 0 2px 0 150px;
+    margin: 0 2px 0 15vw;
     flex-direction: row-reverse;
 }
 a:hover{
@@ -127,6 +135,12 @@ a:hover{
     }
     .infoblock{
         display: block;
+    }
+    .left{
+        margin: 0 10vw 0 3px;
+    }
+    .right{
+        margin: 0 3px 0 10vw;
     }
 }
 /* #gotop{
