@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import CTAButton from '@/components/ui/CTAButton'
 
 export default function Gallery() {
   return (
@@ -40,7 +40,7 @@ export default function Gallery() {
           </a>
         </div>
       </div>
-      <Link href="/maincalc" className="tocalc">Узнать стоимость</Link>
+      <CTAButton href="/maincalc">Узнать стоимость</CTAButton>
     </section>
   )
 }

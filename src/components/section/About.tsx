@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import CTAButton from '@/components/ui/CTAButton'
 
 export default function About() {
   return (
@@ -23,7 +23,7 @@ export default function About() {
           <h3>Создание дизайн-проекта интерьера</h3>
         </div>
       </div>
-      <Link href="/maincalc" className="tocalc">Узнать стоимость</Link>
+     <CTAButton href="/maincalc">Узнать стоимость</CTAButton>
     </section>
   )
 }

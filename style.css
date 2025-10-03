@@ -107,7 +107,7 @@ header .name{
 .offer{
     height: 30em;
     /* background-color: bisque; */
-    background-image: url(offer1280.jpg);
+    background-image: url(/offer1280.jpg);
     padding-right: 3em;
     padding-top: 1em;
     background-size:cover;

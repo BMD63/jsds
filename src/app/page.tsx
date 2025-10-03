@@ -6,6 +6,7 @@ import About from '@/components/section/About'
 import Gallery from '@/components/section/Gallery'
 import Profile from '@/components/section/Profile'
 import Contacts from '@/components/section/Contacts'
+import CTAButton from '@/components/ui/CTAButton'
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
             </h3>
           </div>
           <Image src="/discount.png" alt="Скидка" width={200} height={200} />
-          <Link href="/maincalc" className="tocalc">Узнать стоимость</Link>
+          <CTAButton href="/maincalc">Узнать стоимость</CTAButton>
         </div>
       </section>
 
@@ -31,8 +32,11 @@ export default function Home() {
         <About />
         <Gallery />
         <Profile />
-        <Contacts />
       </article>
+
+      <footer>
+        <Contacts />
+      </footer>
     </div>
   )
 }

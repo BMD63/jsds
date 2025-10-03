@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import CTAButton from '@/components/ui/CTAButton'
 
 export default function Profile() {
   return (
@@ -86,7 +86,7 @@ export default function Profile() {
           Не верите?
           Проверьте! ;) 
         </p>
-        <Link href="/maincalc" className="tocalc">Узнать стоимость</Link>
+        <CTAButton href="/maincalc">Узнать стоимость</CTAButton>
       </div>
     </section>
   )
