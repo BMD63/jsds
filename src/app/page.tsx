@@ -2,6 +2,8 @@ import Header from '@/components/layout/Header'
 import Navigation from '@/components/layout/Navigation'
 import Link from 'next/link'
 import Image from 'next/image'
+import About from '@/components/section/About'
+import Gallery from '@/components/section/Gallery'
 
 export default function Home() {
   return (
@@ -23,7 +25,11 @@ export default function Home() {
         </div>
       </section>
 
-      <p>Остальные секции добавлю потом...</p>
+      <article className="infoblock">
+        <About />
+        <Gallery />
+        <p>Следующие секции (галерея, профиль, контакты) добавляются...</p>
+      </article>
     </div>
   )
 }
