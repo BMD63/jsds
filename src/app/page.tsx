@@ -1,18 +1,12 @@
-import Header from '@/components/layout/Header'
-import Navigation from '@/components/layout/Navigation'
-import Link from 'next/link'
 import Image from 'next/image'
 import About from '@/components/section/About'
 import Gallery from '@/components/section/Gallery'
 import Profile from '@/components/section/Profile'
-import Contacts from '@/components/section/Contacts'
 import CTAButton from '@/components/ui/CTAButton'
 
 export default function Home() {
   return (
     <div className="container">
-      <Header />
-      <Navigation />
       
       <section id="home">
         <div className="offer">
@@ -27,16 +21,11 @@ export default function Home() {
           <CTAButton href="/maincalc">Узнать стоимость</CTAButton>
         </div>
       </section>
-
       <article className="infoblock">
         <About />
         <Gallery />
         <Profile />
       </article>
-
-      <footer>
-        <Contacts />
-      </footer>
     </div>
   )
 }

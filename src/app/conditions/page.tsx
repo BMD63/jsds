@@ -1,15 +1,8 @@
-import Header from '@/components/layout/Header'
-import Navigation from '@/components/layout/Navigation'
-import Contacts from '@/components/section/Contacts'
 import Link from 'next/link'
 
 export default function Conditions() {
   return (
-    <div className="container">
-      <Header />
-      <Navigation />
-      
-      <main style={{ padding: '2em', maxWidth: '1200px', margin: '0 auto' }}>
+    <>
         <h1 style={{ textAlign: 'center', marginBottom: '2em' }}>Условия работы</h1>
         
         <section style={{ marginBottom: '3em' }}>
@@ -101,11 +94,6 @@ export default function Conditions() {
             Рассчитать стоимость проекта
           </Link>
         </section>
-      </main>
-
-      <footer>
-              <Contacts />
-      </footer>
-    </div>
+    </>
   )
 }

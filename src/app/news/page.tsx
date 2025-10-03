@@ -1,6 +1,3 @@
-import Header from '@/components/layout/Header'
-import Navigation from '@/components/layout/Navigation'
-import Contacts from '@/components/section/Contacts'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -41,11 +38,7 @@ export default function News() {
   ]
 
   return (
-    <div className="container">
-      <Header />
-      <Navigation />
-      
-      <main style={{ padding: '2em', maxWidth: '1200px', margin: '0 auto' }}>
+     <>
         <h1 style={{ textAlign: 'center', marginBottom: '2em' }}>Новости</h1>
         
         <div style={{ display: 'grid', gap: '3em' }}>
@@ -112,11 +105,6 @@ export default function News() {
             Заказать проект
           </Link>
         </section>
-      </main>
-
-      <footer>
-        <Contacts />
-      </footer>
-    </div>
+      </>
   )
 }
