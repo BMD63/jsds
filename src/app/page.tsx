@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import About from '@/components/section/About'
 import Gallery from '@/components/section/Gallery'
+import Profile from '@/components/section/Profile'
+import Contacts from '@/components/section/Contacts'
 
 export default function Home() {
   return (
@@ -28,7 +30,8 @@ export default function Home() {
       <article className="infoblock">
         <About />
         <Gallery />
-        <p>Следующие секции (галерея, профиль, контакты) добавляются...</p>
+        <Profile />
+        <Contacts />
       </article>
     </div>
   )
