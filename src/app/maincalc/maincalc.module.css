@@ -1,0 +1,131 @@
+.container {
+  padding: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2em;
+  color: #003e50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  align-items: start;
+}
+
+.form {
+  background-color: #f8f9fa;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+.form h3 {
+  margin-bottom: 1.5em;
+  color: #003e50;
+}
+
+.result {
+  background-color: #68aab5;
+  color: white;
+  padding: 2em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.result h2 {
+  margin-bottom: 1em;
+}
+
+.price {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.disclaimer {
+  margin-bottom: 2em;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.buttonPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.75em 1.5em;
+  background-color: white;
+  color: #68aab5;
+  text-decoration: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.buttonPrimary:hover {
+  transform: translateY(-2px);
+}
+
+.buttonSecondary {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.buttonSecondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.formGroup {
+  margin-bottom: 1.5em;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #003e50;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #68aab5;
+  border-radius: 0.3em;
+  font-size: 1em;
+  background-color: white;
+}
+
+.rangeLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: #666;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 0;
+}
