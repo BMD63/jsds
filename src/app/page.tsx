@@ -1,0 +1,29 @@
+import Header from '@/components/layout/Header'
+import Navigation from '@/components/layout/Navigation'
+import Link from 'next/link'
+import Image from 'next/image'
+
+export default function Home() {
+  return (
+    <div className="container">
+      <Header />
+      <Navigation />
+      
+      <section id="home">
+        <div className="offer">
+          <div className="offertext">
+            <h1>Архитектурные проекты<br />быстро и просто</h1>
+            <h3>Выполним архитектурные проекты<br />
+              дизайна интерьера или самого здания, <br />
+              в удобной для вас форме и в короткие сроки.
+            </h3>
+          </div>
+          <Image src="/discount.png" alt="Скидка" width={200} height={200} />
+          <Link href="/maincalc" className="tocalc">Узнать стоимость</Link>
+        </div>
+      </section>
+
+      <p>Остальные секции добавлю потом...</p>
+    </div>
+  )
+}
