@@ -30,9 +30,9 @@ html * {max-height:1000000px;}
     color: #68aab5;
     text-shadow: 3px 3px 5px rgb(12, 12, 12);
 }
-.header img{
+/* .header img{
     width: 10%;
-}
+} */
 header .name{
     width: fit-content;
 }
@@ -63,19 +63,29 @@ nav .menu{
     /* background: linear-gradient(90deg, rgb(152, 207, 195), rgb(86, 181, 184)); */
     height: 1.8em;
     opacity: 0.8;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-name: slideright;
+    animation-timing-function: ease-out;
 }
 @keyframes slideright {
-    from {
-        margin-left: 100%;
-        width: 500%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-10%); 
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(5%); 
+    }
+    90% {
+        transform: translateX(-2%); 
+    }
+    100% {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
 }
 .menu li{
     padding-top: 2px;
@@ -85,14 +95,23 @@ nav .menu{
     text-align: center;
     border-radius: 1em;
     box-shadow: 0 0 2px 2px grey;
+    transition: all 0.3s ease;
     /* background-color: rgb(152, 207, 195); */
 }
+
+.menu li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(104, 170, 181, 0.2);
+}
+
 .menu a:hover{
-    box-shadow: 0 0 5px 5px rgb(255, 254, 254);
+    box-shadow: 0 0 8px 4px rgba(255, 254, 254, 0.8);
     transition-duration: 0.3s;
     color: white;
     text-shadow: 0 0 3px black;
-    
+    text-shadow: 0 0 3px black;
+    background-color: #68aab5;
 }
 .menu a{
     text-decoration: none;
@@ -102,6 +121,7 @@ nav .menu{
     /* text-shadow: 0 0 3px black; */
     font-weight: bold;
     border-radius: 1em;
+    transition: all 0.3s ease;
 }
 .offer{
     height: 30em;
