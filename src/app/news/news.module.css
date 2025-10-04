@@ -1,0 +1,99 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2em;
+  color: #003e50;
+}
+
+.newsGrid {
+  display: grid;
+  gap: 3em;
+}
+
+.newsCard {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2em;
+  align-items: start;
+  padding: 2em;
+  background-color: #f8f9fa;
+  border-radius: 1em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.newsCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.newsImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.newsContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.date {
+  color: #68aab5;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+.newsTitle {
+  margin-bottom: 1em;
+  color: #003e50;
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+
+.description {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.projectLink {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background-color: #68aab5;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.projectLink:hover {
+  background-color: #003e50;
+  transform: translateY(-2px);
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 3em;
+  padding: 2em;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 1em;
+}
+
+.ctaButton {
+  font-size: 1.2em;
+  padding: 1em 2em;
+}
