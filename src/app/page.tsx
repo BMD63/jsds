@@ -1,13 +1,24 @@
-import Image from 'next/image'
+'use client'
+
+import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import About from '@/components/section/About'
 import Gallery from '@/components/section/Gallery'
 import Profile from '@/components/section/Profile'
 import CTAButton from '@/components/ui/CTAButton'
 
 export default function Home() {
+
+  const pathname = usePathname()
+
+  useEffect(() => {
+    if (pathname === '/') {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname])
+
   return (
-    <div className="container">
-      
+    <div className="container"> 
       <section id="home">
         <div className="offer">
           <div className="offertext">
@@ -16,10 +27,16 @@ export default function Home() {
               дизайна интерьера или самого здания, <br />
               в удобной для вас форме и в короткие сроки.
             </h3>
-          </div>
-          <Image src="/discount.png" alt="Скидка" width={200} height={200} />
-          <CTAButton href="/maincalc">Узнать стоимость</CTAButton>
+          </div>    
         </div>
+        <div className = "ctaWrapper" >
+          <CTAButton 
+            href="/maincalc"
+          >
+            Узнать стоимость
+          </CTAButton>
+        </div>
+        
       </section>
       <article className="infoblock">
         <About />

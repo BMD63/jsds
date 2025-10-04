@@ -6,6 +6,7 @@ interface CTAButtonProps {
   className?: string
   variant?: 'primary' | 'secondary'
   size?: 'small' | 'medium' | 'large'
+  style?: React.CSSProperties
 }
 
 export default function CTAButton({ href, children, className = '' }: CTAButtonProps) {

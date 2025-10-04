@@ -52,6 +52,7 @@ nav{
     height: 1.5em;
     align-items: center;
     z-index: 10; 
+    margin-top: 1em;
 }
 nav .menu{
     display: flex;
@@ -134,6 +135,7 @@ nav .menu{
     text-shadow: 0 0 2px black;
     text-align: right;
     position: relative;
+    margin-bottom: 4em;
 }
 .offer h3{
     color: white;
@@ -158,6 +160,13 @@ nav .menu{
     transform: rotate(-15deg);
     animation: rotate 3s normal linear infinite;
 }
+
+.ctaWrapper{
+    width: 95%;
+    margin: auto;
+}
+
+
 @keyframes rotate {
     0%{
         transform:rotateY(0deg)
